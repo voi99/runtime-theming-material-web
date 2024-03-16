@@ -10,9 +10,15 @@ import { Component, input } from "@angular/core";
     </div>
   `,
   styles: `
+    div {
+      background-color: var(--md-sys-color-surface-variant);
+      border-radius: 28px;
+      padding: 1rem;
+    }
     h3 {
       margin-top: 0;
       margin-bottom: 0.8rem;
+      color: var(--md-sys-color-on-surface-variant);
     }
   `,
 })

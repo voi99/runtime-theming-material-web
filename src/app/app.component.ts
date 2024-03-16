@@ -6,7 +6,21 @@ import { ThemeComponent } from "./theme/theme.component";
   selector: "app-root",
   standalone: true,
   imports: [ButtonsComponent, ThemeComponent],
-  templateUrl: "./app.component.html",
-  styleUrl: "./app.component.scss",
+  template: `
+    <div class="container">
+      <app-theme />
+      <app-buttons />
+    </div>
+  `,
+  styles: `
+    .container {
+      margin: auto;
+      max-width: 1024px;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  `,
 })
 export class AppComponent {}
