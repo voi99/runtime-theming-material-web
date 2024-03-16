@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
