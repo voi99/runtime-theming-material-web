@@ -3,12 +3,15 @@ import { FormsModule } from "@angular/forms";
 import { applyTheme, argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
 import { DEFAULT_COLOR } from "./default-theme";
 import { LS_SOURCE_COLOR_KEY, getSavedColor } from "./helpers";
+import { SectionComponent } from "../section/section.component";
 
 @Component({
   selector: "app-theme",
-  template: ` <input type="color" [ngModel]="color()" (ngModelChange)="color.set($event)" /> `,
+  template: `<app-section title="Theme Controls">
+    <input type="color" [ngModel]="color()" (ngModelChange)="color.set($event)" />
+  </app-section> `,
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, SectionComponent],
 })
 export class ThemeComponent {
   color = signal(getSavedColor() || DEFAULT_COLOR);
