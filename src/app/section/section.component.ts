@@ -15,18 +15,18 @@ import { Component, input } from "@angular/core";
     .section {
       background-color: var(--md-sys-color-surface-variant);
       border-radius: 28px;
-      padding: 1rem;
+      padding: 1.15rem;
 
       h3 {
         margin-top: 0;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.35rem;
         color: var(--md-sys-color-on-surface-variant);
       }
 
       .section-content {
         background-color: var(--md-sys-color-surface);
         border-radius: 12px;
-        padding: 0.75rem;
+        padding: 1rem;
       }
     }
   `,
