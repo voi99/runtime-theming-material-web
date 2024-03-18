@@ -1,11 +1,12 @@
+import "@material/web/icon/icon.js";
+import "@material/web/iconbutton/outlined-icon-button.js";
+
 import { CUSTOM_ELEMENTS_SCHEMA, Component, computed, effect, inject, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { applyTheme, argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
 import { DEFAULT_COLOR } from "./default-theme";
-import { LS_IS_DARK_MODE_KEY, LS_SOURCE_COLOR_KEY, getSavedColor, getSavedThemeMode } from "./helpers";
+import { DARK_MODE_KEY, SOURCE_COLOR_KEY, getSavedColor, getSavedThemeMode } from "./helpers";
 import { SectionComponent } from "../section/section.component";
-import "@material/web/icon/icon.js";
-import "@material/web/iconbutton/outlined-icon-button.js";
 import { DOCUMENT } from "@angular/common";
 
 @Component({
@@ -92,15 +93,18 @@ export class ThemeComponent {
   theme = computed(() => themeFromSourceColor(argbFromHex(this.color())));
 
   applyThemeEffect = effect(() => {
-    applyTheme(this.theme(), { target: this.#document.body, dark: this.isDarkMode() });
+    applyTheme(this.theme(), {
+      target: this.#document.body,
+      dark: this.isDarkMode(),
+    });
   });
 
   saveSourceColorEffect = effect(() => {
-    localStorage.setItem(LS_SOURCE_COLOR_KEY, this.color());
+    localStorage.setItem(SOURCE_COLOR_KEY, this.color());
   });
 
   saveThemeModeEffect = effect(() => {
-    localStorage.setItem(LS_IS_DARK_MODE_KEY, this.isDarkMode().toString());
+    localStorage.setItem(DARK_MODE_KEY, this.isDarkMode().toString());
   });
 
   toggleMode() {
