@@ -6,6 +6,7 @@ import { TextFieldComponent } from "./text-field/text-field.component";
 import { ChipsComponent } from "./chips/chips.component";
 import { CheckboxComponent } from "./checkbox/checkbox.component";
 import { FabComponent } from "./fab/fab.component";
+import { IconButtonComponent } from "./icon-button/icon-button.component";
 
 @Component({
   selector: "app-root",
@@ -16,6 +17,7 @@ import { FabComponent } from "./fab/fab.component";
       <app-buttons />
       <app-fab />
       <app-chips />
+      <app-icon-button />
       <app-switch />
       <app-text-field />
       <app-checkbox />
@@ -39,6 +41,7 @@ import { FabComponent } from "./fab/fab.component";
     ChipsComponent,
     CheckboxComponent,
     FabComponent,
+    IconButtonComponent,
   ],
 })
 export class AppComponent {}
