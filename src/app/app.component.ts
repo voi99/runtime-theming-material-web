@@ -3,6 +3,7 @@ import { ButtonsComponent } from "./buttons/buttons.component";
 import { ThemeComponent } from "./theme/theme.component";
 import { SwitchComponent } from "./switch/switch.component";
 import { TextFieldComponent } from "./text-field/text-field.component";
+import { ChipsComponent } from "./chips/chips.component";
 
 @Component({
   selector: "app-root",
@@ -11,6 +12,7 @@ import { TextFieldComponent } from "./text-field/text-field.component";
     <div class="container">
       <app-theme />
       <app-buttons />
+      <app-chips />
       <app-switch />
       <app-text-field />
     </div>
@@ -25,6 +27,6 @@ import { TextFieldComponent } from "./text-field/text-field.component";
       gap: 0.5rem;
     }
   `,
-  imports: [ButtonsComponent, SwitchComponent, ThemeComponent, TextFieldComponent],
+  imports: [ButtonsComponent, SwitchComponent, ThemeComponent, TextFieldComponent, ChipsComponent],
 })
 export class AppComponent {}
