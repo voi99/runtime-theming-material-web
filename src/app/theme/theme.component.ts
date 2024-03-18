@@ -3,11 +3,11 @@ import "@material/web/iconbutton/outlined-icon-button.js";
 
 import { CUSTOM_ELEMENTS_SCHEMA, Component, computed, effect, inject, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { applyTheme, argbFromHex, themeFromSourceColor } from "@material/material-color-utilities";
 import { DEFAULT_COLOR } from "./default-theme";
 import { DARK_MODE_KEY, SOURCE_COLOR_KEY, getSavedColor, getSavedThemeMode } from "./helpers";
 import { SectionComponent } from "../section/section.component";
 import { DOCUMENT } from "@angular/common";
+import { applyMaterialTheme, themeFromSourceColor } from "../utils-form-material-web/material-color-helpers";
 
 @Component({
   selector: "app-theme",
@@ -90,13 +90,10 @@ export class ThemeComponent {
 
   color = signal(getSavedColor() || DEFAULT_COLOR);
   isDarkMode = signal<boolean>(getSavedThemeMode());
-  theme = computed(() => themeFromSourceColor(argbFromHex(this.color())));
+  theme = computed(() => themeFromSourceColor(this.color(), this.isDarkMode()));
 
   applyThemeEffect = effect(() => {
-    applyTheme(this.theme(), {
-      target: this.#document.body,
-      dark: this.isDarkMode(),
-    });
+    applyMaterialTheme(this.#document, this.theme());
   });
 
   saveSourceColorEffect = effect(() => {
