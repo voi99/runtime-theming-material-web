@@ -5,6 +5,7 @@ import { SwitchComponent } from "./switch/switch.component";
 import { TextFieldComponent } from "./text-field/text-field.component";
 import { ChipsComponent } from "./chips/chips.component";
 import { CheckboxComponent } from "./checkbox/checkbox.component";
+import { FabComponent } from "./fab/fab.component";
 
 @Component({
   selector: "app-root",
@@ -13,6 +14,7 @@ import { CheckboxComponent } from "./checkbox/checkbox.component";
     <div class="container">
       <app-theme />
       <app-buttons />
+      <app-fab />
       <app-chips />
       <app-switch />
       <app-text-field />
@@ -29,6 +31,14 @@ import { CheckboxComponent } from "./checkbox/checkbox.component";
       gap: 0.5rem;
     }
   `,
-  imports: [ButtonsComponent, SwitchComponent, ThemeComponent, TextFieldComponent, ChipsComponent, CheckboxComponent],
+  imports: [
+    ButtonsComponent,
+    SwitchComponent,
+    ThemeComponent,
+    TextFieldComponent,
+    ChipsComponent,
+    CheckboxComponent,
+    FabComponent,
+  ],
 })
 export class AppComponent {}
