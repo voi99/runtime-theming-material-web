@@ -14,7 +14,7 @@ import { SectionComponent } from "./../section/section.component";
     <app-section title="Chips">
       <md-chip-set>
         <md-assist-chip label="Assist" />
-        <md-filter-chip label="Filter" />
+        <md-filter-chip selected label="Filter" />
         <md-input-chip label="Input" />
         <md-suggestion-chip label="Suggestion" />
         <md-suggestion-chip label="Chip with icon">
