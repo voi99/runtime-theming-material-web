@@ -6,7 +6,7 @@ import { FormsModule } from "@angular/forms";
 import { DARK_MODE_KEY, SOURCE_COLOR_KEY, getSavedColor, isDarkModeSaved } from "./helpers";
 import { SectionComponent } from "../section/section.component";
 import { DOCUMENT } from "@angular/common";
-import { applyMaterialTheme, themeFromSourceColor } from "../utils-form-material-web/material-color-helpers";
+import { applyMaterialTheme, themeFromSourceColor } from "../utils-from-material-web/material-color-helpers";
 
 export const DEFAULT_COLOR = "#8714fa";
 
