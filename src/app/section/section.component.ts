@@ -13,20 +13,19 @@ import { Component, input } from "@angular/core";
   `,
   styles: `
     .section {
-      background-color: var(--md-sys-color-surface-variant);
+      border: 1px solid var(--md-sys-color-surface-variant);
       border-radius: 28px;
-      padding: 1.15rem;
+      padding: 1.5rem;
 
       h3 {
         margin-top: 0;
-        margin-bottom: 0.35rem;
+        margin-bottom: 1rem;
         color: var(--md-sys-color-on-surface-variant);
       }
 
       .section-content {
         background-color: var(--md-sys-color-surface);
         border-radius: 12px;
-        padding: 1rem;
       }
     }
   `,

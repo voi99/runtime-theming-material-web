@@ -3,9 +3,14 @@
   --md-ref-typeface-plain: "Poppins", sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--md-sys-color-surface);
+  background-color: var(--md-sys-color-background);
   margin: 0;
 }
 

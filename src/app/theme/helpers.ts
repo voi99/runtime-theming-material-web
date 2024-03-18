@@ -5,6 +5,6 @@ export function getSavedColor(): string | null {
   return localStorage.getItem(SOURCE_COLOR_KEY);
 }
 
-export function getSavedThemeMode(): boolean {
+export function isDarkModeSaved(): boolean {
   return localStorage.getItem(DARK_MODE_KEY) !== "false";
 }

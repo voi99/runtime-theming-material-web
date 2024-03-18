@@ -15,7 +15,11 @@ import { SectionComponent } from "../section/section.component";
       </div>
     </app-section>
   `,
-  styles: ``,
+  styles: `
+    .flex-wrapper {
+      gap: 1.25rem;
+    }
+  `,
   imports: [SectionComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
