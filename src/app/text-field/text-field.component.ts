@@ -18,6 +18,13 @@ import { SectionComponent } from "../section/section.component";
   styles: `
     .flex-wrapper {
       gap: 1.25rem;
+
+      @media (max-width: 640px) {
+        md-filled-text-field,
+        md-outlined-text-field {
+          width: 100%;
+        }
+      }
     }
   `,
   imports: [SectionComponent],

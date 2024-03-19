@@ -31,7 +31,14 @@ import { SectionComponent } from "../section/section.component";
       </div>
     </app-section>
   `,
-  styles: ``,
+  styles: `
+    @media (max-width: 640px) {
+      md-outlined-select,
+      md-filled-select {
+        width: 100%;
+      }
+    }
+  `,
   imports: [SectionComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
