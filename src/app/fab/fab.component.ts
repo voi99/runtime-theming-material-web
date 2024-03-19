@@ -1,4 +1,4 @@
-import "@material/web/fab/fab.js";
+import "@material/web/fab/fab";
 
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from "@angular/core";
 import { SectionComponent } from "../section/section.component";

@@ -1,5 +1,5 @@
-import "@material/web/textfield/filled-text-field.js";
-import "@material/web/textfield/outlined-text-field.js";
+import "@material/web/textfield/filled-text-field";
+import "@material/web/textfield/outlined-text-field";
 
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from "@angular/core";
 import { SectionComponent } from "../section/section.component";

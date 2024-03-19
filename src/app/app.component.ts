@@ -7,6 +7,7 @@ import { ChipsComponent } from "./chips/chips.component";
 import { CheckboxComponent } from "./checkbox/checkbox.component";
 import { FabComponent } from "./fab/fab.component";
 import { IconButtonComponent } from "./icon-button/icon-button.component";
+import { SelectComponent } from "./select/select.component";
 
 @Component({
   selector: "app-root",
@@ -20,6 +21,7 @@ import { IconButtonComponent } from "./icon-button/icon-button.component";
       <app-icon-button />
       <app-switch />
       <app-text-field />
+      <app-select />
       <app-checkbox />
     </div>
   `,
@@ -42,6 +44,7 @@ import { IconButtonComponent } from "./icon-button/icon-button.component";
     CheckboxComponent,
     FabComponent,
     IconButtonComponent,
+    SelectComponent,
   ],
 })
 export class AppComponent {}

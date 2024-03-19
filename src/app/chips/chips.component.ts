@@ -1,8 +1,8 @@
-import "@material/web/chips/assist-chip.js";
-import "@material/web/chips/chip-set.js";
-import "@material/web/chips/filter-chip.js";
-import "@material/web/chips/input-chip.js";
-import "@material/web/chips/suggestion-chip.js";
+import "@material/web/chips/assist-chip";
+import "@material/web/chips/chip-set";
+import "@material/web/chips/filter-chip";
+import "@material/web/chips/input-chip";
+import "@material/web/chips/suggestion-chip";
 
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from "@angular/core";
 import { SectionComponent } from "./../section/section.component";

@@ -1,4 +1,4 @@
-import "@material/web/switch/switch.js";
+import "@material/web/switch/switch";
 
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from "@angular/core";
 import { SectionComponent } from "../section/section.component";

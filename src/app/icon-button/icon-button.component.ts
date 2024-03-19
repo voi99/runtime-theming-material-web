@@ -1,7 +1,7 @@
-import "@material/web/iconbutton/filled-icon-button.js";
-import "@material/web/iconbutton/filled-tonal-icon-button.js";
-import "@material/web/iconbutton/icon-button.js";
-import "@material/web/iconbutton/outlined-icon-button.js";
+import "@material/web/iconbutton/filled-icon-button";
+import "@material/web/iconbutton/filled-tonal-icon-button";
+import "@material/web/iconbutton/icon-button";
+import "@material/web/iconbutton/outlined-icon-button";
 
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { SectionComponent } from "../section/section.component";

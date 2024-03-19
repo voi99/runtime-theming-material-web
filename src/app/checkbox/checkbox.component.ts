@@ -1,4 +1,4 @@
-import "@material/web/checkbox/checkbox.js";
+import "@material/web/checkbox/checkbox";
 
 import { SectionComponent } from "../section/section.component";
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from "@angular/core";

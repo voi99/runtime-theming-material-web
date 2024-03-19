@@ -1,5 +1,5 @@
-import "@material/web/icon/icon.js";
-import "@material/web/iconbutton/outlined-icon-button.js";
+import "@material/web/icon/icon";
+import "@material/web/iconbutton/outlined-icon-button";
 
 import { CUSTOM_ELEMENTS_SCHEMA, Component, computed, effect, inject, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
@@ -12,7 +12,7 @@ export const DEFAULT_COLOR = "#8714fa";
 
 @Component({
   selector: "app-theme",
-  template: `<app-section title="Theme Controls">
+  template: `<app-section title="Runtime Theming">
     <div class="theme-controls">
       <div class="color-picker-wrapper">
         <div class="color-picker-overflow">
