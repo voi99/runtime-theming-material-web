@@ -55,6 +55,7 @@ export const DEFAULT_COLOR = "#8714fa";
           border-radius: 50%;
 
           #color-input {
+            cursor: pointer;
             border: none;
             background: none;
             min-width: 150%;
