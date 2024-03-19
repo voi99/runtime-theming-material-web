@@ -8,6 +8,7 @@ import { CheckboxComponent } from "./checkbox/checkbox.component";
 import { FabComponent } from "./fab/fab.component";
 import { IconButtonComponent } from "./icon-button/icon-button.component";
 import { SelectComponent } from "./select/select.component";
+import { SliderComponent } from "./slider/slider.component";
 
 @Component({
   selector: "app-root",
@@ -23,6 +24,7 @@ import { SelectComponent } from "./select/select.component";
       <app-text-field />
       <app-select />
       <app-checkbox />
+      <app-slider />
     </div>
   `,
   styles: `
@@ -45,6 +47,7 @@ import { SelectComponent } from "./select/select.component";
     FabComponent,
     IconButtonComponent,
     SelectComponent,
+    SliderComponent,
   ],
 })
 export class AppComponent {}
