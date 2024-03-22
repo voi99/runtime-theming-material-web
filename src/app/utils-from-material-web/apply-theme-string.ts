@@ -1,3 +1,5 @@
+// check [https://github.com/material-components/material-web]
+
 type WithStylesheet = typeof globalThis & {
   [stylesheetName: string]: CSSStyleSheet | undefined;
 };

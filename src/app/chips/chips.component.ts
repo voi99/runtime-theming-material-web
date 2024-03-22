@@ -23,7 +23,6 @@ import { SectionComponent } from "./../section/section.component";
       </md-chip-set>
     </app-section>
   `,
-  styles: ``,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [SectionComponent],
 })

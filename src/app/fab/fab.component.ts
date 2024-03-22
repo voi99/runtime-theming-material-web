@@ -24,7 +24,6 @@ import { SectionComponent } from "../section/section.component";
       </div>
     </app-section>
   `,
-  styles: ``,
   imports: [SectionComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

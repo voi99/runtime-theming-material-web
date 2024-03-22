@@ -32,7 +32,6 @@ import { SectionComponent } from "../section/section.component";
       </div>
     </app-section>
   `,
-  styles: ``,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class IconButtonComponent {}
